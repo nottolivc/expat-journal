@@ -1,0 +1,659 @@
+html {
+  box-sizing: border-box;
+}
+
+body {
+
+  font-family: 'Source Sans Pro', 'Raleway','Roboto', sans-serif;
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+#loading {
+    background: url('loading.gif') no-repeat center center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+	z-index: 999;
+	border-radius: 8px;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/ 
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+
+/* Your code starts here! */
+html, body {
+    height: 100%;
+	font-family: 'Source Sans Pro','Raleway', 'Roboto', sans-serif;
+	margin: 0 auto;
+}
+
+
+.container {
+	margin: 0 auto;
+}
+
+nav {
+	display: flex;
+	justify-content: space-around;
+	text-align: center;
+	font-size: 1.2rem;
+	background: white;
+	color: #444;
+	padding: 25px;
+	margin-bottom: 15px;	
+	box-shadow: 4px 0 4px #aaa;
+	height: 160px;
+	width: 100%;
+}
+
+h1 {
+	letter-spacing: 0.4px;
+	font-weight: 1200;
+	font-size: 2.8rem;
+	font-family: 'Source Sans Pro','Raleway', 'Roboto', sans-serif;
+	text-align: center;
+	padding-top: 40px;
+	color: black;
+}
+
+.main_h2 {
+	letter-spacing: 0.7px;
+	font-weight: 1200;
+	font-size: 3.1rem;
+}
+
+h2 {
+	font-size: 2rem;
+	margin-bottom: 15px;
+}
+
+nav a {
+	color: #444;
+	text-decoration: none;	
+	margin-top: 25px;
+	font-weight: 800;
+	padding-top: 30px;
+}
+
+nav a:hover {
+	background-color: whitesmoke;
+	text-align: center;
+	border-radius: 4px;
+	color: black;
+	width: 90px;
+	box-shadow: 2px 2px 4px #aaa;
+	transition: 0.45s ease-in;
+}
+
+a:hover {
+	color: lightgrey;
+	text-decoration: none;	
+}
+
+.postImage {
+	width: 38%;
+	height: 35%;
+	border-radius: 4px;
+	border: 2px solid white;
+}
+
+
+.row {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 100%;
+  }
+  
+.column {
+	display: flex;
+	flex-direction: column;
+	flex-basis: 100%;
+	flex: 1;
+	padding: 25px;
+  }
+  
+.column1 {
+	border: 2px solid lightgrey;
+	border-radius: 12px;
+	background: white;
+	height: 480px;
+	padding: 25px;
+	box-shadow: 2px 2px 4px #aaa;
+  }
+ 
+ .column1:hover, .column2:hover { 
+	 background-color: #bffff2;
+ }
+
+ .column1:hover article { 
+	background-color: whitesmoke;
+}
+
+.column2:hover article { 
+	background-color: whitesmoke;
+}
+
+  
+.column2 {
+	border: 2px solid lightgrey;
+	border-radius: 12px;
+	background: white;
+	height: 480px;
+	padding: 25px;
+	box-shadow: 2px 2px 4px #aaa;
+  }
+
+/* call to action styling/buttons */
+#cta1 {
+	background-color:black;
+	width: 150px;
+	height: 120px;
+	border-radius: 16px;
+	color: white;
+	box-shadow: 2px 0 2px #aaa;
+	padding: 16px;
+	border: 2px solid whitesmoke;
+	justify-content: space-around;
+	text-align: center;
+	font-size: 1.5rem;
+	cursor: pointer;
+	display: block;
+}
+
+#cta2 {
+	background-color:black;
+	width: 150px;
+	height: 120px;
+	border-radius: 16px;
+	color: white;
+	box-shadow: 2px 0 2px #aaa;
+	padding: 16px;
+	border: 2px solid whitesmoke;
+	justify-content: space-around;
+	text-align: center;
+	font-size: 1.5rem;
+	cursor: pointer;
+	display: block;
+	padding: 8px 8px 8px 8px;
+}
+
+#cta3 {
+	background-color: black;
+	width: 150px;
+	height: 120px;
+	border-radius: 16px;
+	color: white;
+	box-shadow: 2px 0 2px #aaa;
+	padding: 16px;
+	border: 2px solid whitesmoke;
+	justify-content: space-around;
+	text-align: center;
+	font-size: 1.5rem;
+	cursor: pointer;
+	display: block;
+}
+
+#cta1:hover  {
+	background-color: #44D7B6;;
+	color: black;
+	font-size: 1.7rem;
+}
+
+#cta2:hover  {
+	background-color: #44D7B6;
+	color: black;
+	font-size: 1.7rem;
+}
+
+#cta3:hover  {
+	background-color: #44D7B6;
+	color: black;
+	font-size: 1.7rem;
+}
+
+hr {
+	width: 80%;
+}
+
+article {
+	animation-duration: 1.6s;
+	animation-name: slidein;
+}
+  
+  @keyframes slidein {
+	from {
+	  margin-left: 100%;
+	  width: 300%; 
+	}
+  
+	to {
+	  margin-left: 0%;
+	  width: 100%;
+	}
+  }
+/* animation on articles hover */
+  .container article {
+    font-size: 1.2rem;
+	border: 2px #fff solid;
+	border-radius: 8px;
+    padding: 1.2rem 1.2rem;
+    margin-bottom: 1rem;
+    transition: all 0.5s ease-out; }
+    .container article:hover {
+      padding: 0.5rem 1.3rem;
+	  background: white;
+	  border-radius: 12px;
+      color: #000; }
+      .container article:hover span {
+        color: #000; }
+
+.img1 {
+	width: 100%;
+	height: 450px;
+	border-radius: 2px;
+	/*padding-bottom: 45px;*/
+}
+
+@media (min-width: 768px) {
+	.img1 {
+		height: 550px;
+		width: 900px;
+	}
+}
+
+
+.block2 {
+	background-color:  #44D7B6;
+	background-image: url("img/cool-background.svg");
+	/*background-image: url("img/st_tropez.jpeg");*/
+	color: black;
+	opacity: 0.88;
+	width: 100%;
+	height: 590px;
+	align-content: center;
+	text-align: center;
+	padding: 25px;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.column {
+	background-color: white;
+	opacity: 0.95;
+}
+
+p {
+	font-size: 1.1rem;
+	color: #444;
+}
+
+.phoneimg {
+	width: 250px;
+	height: 50%;
+	box-shadow: 2px 0 2px #aaa;
+
+}
+
+/* Style the form - display items vertical */
+.form-inline { 
+	display: flex;
+	flex-flow: column wrap;
+	align-items: center;
+	color: white;
+  }
+  
+  /* Add some margins for each label */
+  .form-inline label {
+	margin: 5px 10px 5px 0;
+  }
+  
+  /* Style the input fields */
+  .form-inline input {
+	vertical-align: middle;
+	margin: 5px 10px 5px 0;
+	padding: 11px;
+	background-color: lightgrey;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+  }
+  
+  /* Style the submit button */
+  .form-inline button {
+	padding: 11px 20px;
+	background-color:black;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	color: white;
+	font-size: 1.1rem;
+	opacity: 1;
+  }
+
+  button {
+	padding: 11px 20px;
+	background-color: black;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	color: white;
+	font-size: 1rem;
+	border-bottom: 21px;
+  }
+  
+  .form-inline button:hover {
+	background-color:#44D7B6;
+	color: black;
+  }
+  
+  /* small tablet style attributes */
+
+  @media (max-width: 768px) {
+	.row {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		width: 100%;
+		color: black;
+	  }
+	
+	p {
+		font-size: 1.1rem;
+	}  
+	
+	.postImage {
+		width: 28%;
+		height: 25%;
+		border-radius: 4px;
+		border: 2px solid white;
+	}
+
+	.column1:hover, .column2:hover { 
+		background-color: #bcf0e5;
+	}
+
+	.column {
+		display: flex;
+		flex-direction: column;
+		flex-basis: 100%;
+		flex: 1;
+		padding: 25px;
+		color:black;
+	  }
+	/* hide elements */
+	#cta1, #cta2, #cta3 {
+		display: none;
+		/*background-color:lightblue;
+		width: 200px;
+		height: 200px;
+		border-radius: 16px;
+		color: white;
+		box-shadow: 2px 0 2px #aaa;
+		padding: 16px;
+		border: 2px solid silver;
+		justify-content: space-around;
+		text-align: center;
+		font-size: 1.5rem;
+		cursor: pointer;
+		align-content: center;
+		align-items: center;*/
+	}
+	
+  }
+
+footer {
+	display: flex;
+	justify-content: space-around;
+	text-align: center;
+	font-size: 1.2rem;
+	background: black;
+	padding: 25px;
+	color:lightgrey;	
+}
+
+footer a {
+	color: lightgrey;
+	text-decoration: none;	
+}
+
+@include keyframes(bounce) {
+	0%, 20%, 50%, 80%, 100% {
+    @include transform(translateY(0));
+  }
+	40% {
+    @include transform(translateY(-30px));
+  }
+	60% {
+    @include transform(translateY(-15px));
+  }
+}
+
+.block {
+	background: url("img/st_tropez.jpeg") no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.arrows {
+	text-align: center;
+	margin: 8% 0;
+	color: #444;
+	text-shadow: 2px 0 2px #444;
+  }
+  .bounce {
+	-moz-animation: bounce 2s infinite;
+	-webkit-animation: bounce 2s infinite;
+	animation: bounce 2s infinite;
+  }
+  
+  @keyframes bounce {
+	0%, 20%, 50%, 80%, 100% {
+	  transform: translateY(0);
+	}
+	40% {
+	  transform: translateY(-30px);
+	}
+	60% {
+	  transform: translateY(-15px);
+	}
+  }
+
+.arrows {
+    position: absolute;
+    top: 24%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.arrows span {
+    display: block;
+    width: 11px;
+    height: 11px;
+    border-bottom: 4px solid #444;
+    border-right: 4px solid #444;
+    transform: rotate(45deg);
+    margin: -10px;
+    animation: animate 2s infinite;
+}
+.arrows span:nth-child(2){
+    animation-delay: -0.2s;
+}
+.arrows span:nth-child(3){
+    animation-delay: -0.4s;
+}
+@keyframes animate {
+    0%{
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px,-20px);
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        transform: rotate(45deg) translate(20px,20px);
+	}
+}
+
+/* styling for JS carousel */
+.slide {
+	display: flex;
+	box-shadow: 2px 0 2px #aaa;
+	padding: 16px;
+	border: 2px solid silver;
+	justify-content: space-around;
+}
+
+/* mobile nav menu styling */
+/* Style the navigation menu and make it display as 'topnav' when <550px and hide main nav*/
+.topnav {
+	display: none;
+}
+@media (max-width: 550px) {
+.navmain {
+	display: none;
+}
+
+.topnav {
+	overflow: hidden;
+	background-color: white;
+	position: relative;
+	display: block;
+	margin-bottom: 20px;	
+	box-shadow: 4px 0 4px #aaa;
+  }
+
+  .postImage {
+	width: 28%;
+	height: 17%;
+	border-radius: 4px;
+	border: 2px solid white;
+	}
+  /* Hide the links inside the navigation menu (except for logo/home) */
+  #myLinks {
+	display: none;
+  } 
+
+  .arrows {
+ 	display: none;
+  }
+
+  /* Style navigation menu links */
+  .topnav a {
+	color: #444;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 1.2rem;
+	display: block;
+  }
+  
+  /* menu icon */
+  .topnav a.icon {
+	background: white;
+	display: block;
+	position: absolute;
+	right: 0;
+	top: 0;
+  }
+  
+  /* background color on mouse-over */
+  .topnav a:hover {
+	background-color: lightgrey;
+	color: black;
+	box-shadow: 2px 0 2px #aaa;
+  }
+  
+  /* Style the active link (or home/logo) */
+  .active {
+	background-color: white;
+	color: #444;
+	margin-bottom: 16px;
+  }
+
+  button {
+	margin-bottom: 40px;
+  }
+}
+
+.container .team {
+	color: #444;
+	text-align: center;
+}
+
+
+.img_profile {
+	width: 100px;
+	height: 100px;
+	border-radius: 8px;
+	opacity: 0.7;
+	text-align: center;
+	border: 2px solid whitesmoke;
+}
+
+.team a {
+	color: #444;
+	cursor: pointer;
+}
+
+.team a:hover {
+	color:#44D7B6;
+	cursor: pointer;
+}
+
+.team h4 {
+	font-size: 1.6rem;
+}
